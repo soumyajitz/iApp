@@ -12,6 +12,7 @@
 		3B504ED71C438CC300B9FACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B504ED51C438CC300B9FACB /* Main.storyboard */; };
 		3B504ED91C438CC300B9FACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B504ED81C438CC300B9FACB /* Assets.xcassets */; };
 		3B504EDC1C438CC300B9FACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B504EDA1C438CC300B9FACB /* LaunchScreen.storyboard */; };
+		3B504EE41C43949500B9FACB /* cat-clip-art-animals.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B504EE31C43949500B9FACB /* cat-clip-art-animals.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3B504ED81C438CC300B9FACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B504EDB1C438CC300B9FACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B504EDD1C438CC300B9FACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B504EE31C43949500B9FACB /* cat-clip-art-animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-clip-art-animals.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				3B504ED11C438CC300B9FACB /* AppDelegate.swift */,
 				3B504ED31C438CC300B9FACB /* ViewController.swift */,
 				3B504ED51C438CC300B9FACB /* Main.storyboard */,
+				3B504EE31C43949500B9FACB /* cat-clip-art-animals.png */,
 				3B504ED81C438CC300B9FACB /* Assets.xcassets */,
 				3B504EDA1C438CC300B9FACB /* LaunchScreen.storyboard */,
 				3B504EDD1C438CC300B9FACB /* Info.plist */,
@@ -124,6 +127,7 @@
 			files = (
 				3B504EDC1C438CC300B9FACB /* LaunchScreen.storyboard in Resources */,
 				3B504ED91C438CC300B9FACB /* Assets.xcassets in Resources */,
+				3B504EE41C43949500B9FACB /* cat-clip-art-animals.png in Resources */,
 				3B504ED71C438CC300B9FACB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

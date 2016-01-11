@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Jit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-KQ-rc1">
-                                <rect key="frame" x="110" y="71" width="154" height="58"/>
+                                <rect key="frame" x="110" y="28" width="154" height="58"/>
                                 <color key="backgroundColor" red="0.89588421583175659" green="0.97311109304428101" blue="0.96102887392044067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
                                 <color key="textColor" red="0.22371712327003479" green="0.08640434592962265" blue="0.53043514490127563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -27,16 +27,48 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYk-0Y-H6g">
                                 <rect key="frame" x="110" y="149" width="154" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="02j-tZ-jSU"/>
+                                </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat-clip-art-animals.png" translatesAutoresizingMaskIntoConstraints="NO" id="vhq-Gn-oYv">
+                                <rect key="frame" x="96" y="279" width="183" height="154"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How old are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bki-wa-tKy">
+                                <rect key="frame" x="110" y="105" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vf-KI-1ZM">
+                                <rect key="frame" x="170" y="219" width="34" height="30"/>
+                                <state key="normal" title="Click"/>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.066258497536182404" green="0.013346608728170395" blue="0.97761243581771851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.8073163628578186" green="0.0050075715407729149" blue="0.99842923879623413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rh-iM-ccD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="bki-wa-tKy" id="7Ao-Wg-81q"/>
+                        <outlet property="textfield" destination="AYk-0Y-H6g" id="CrT-OX-vY6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244.5" y="307.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat-clip-art-animals.png" width="1969" height="1937"/>
+    </resources>
 </document>

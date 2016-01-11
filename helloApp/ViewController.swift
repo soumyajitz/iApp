@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textfield: UITextField!
+    @IBOutlet var label: UILabel!
+    @IBAction func click(sender: AnyObject) {
+        
+        print("Button Tapped")
+        label.text = textfield.text
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        print("Hello World my First App")
     }
 
     override func didReceiveMemoryWarning() {
