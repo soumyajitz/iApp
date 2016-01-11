@@ -10,8 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var ansText: UILabel!
+    @IBOutlet var catText: UITextField!
     @IBOutlet var textfield: UITextField!
     @IBOutlet var label: UILabel!
+    
+    @IBAction func catButton(sender: AnyObject) {
+       var catAge = Int(catText.text!)!
+        catAge = catAge * 7
+        ansText.text = "Your cat is \(catAge) years old"
+    }
+    
     @IBAction func click(sender: AnyObject) {
         
         print("Button Tapped")
